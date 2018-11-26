@@ -147,7 +147,7 @@ body>footer {
 
 /* Pulldown Menu Styles */
 
-.submenu {
+ul.submenu {
     display: none;
 }
 
@@ -165,7 +165,7 @@ ul.submenu:hover {
 */
 @media only screen and (max-width: 480px) {
 
-    .horizontal a {
+    nav.horizontal a {
         font-size: 1.5em;
         line-height: 2.2em;
     }
@@ -184,7 +184,7 @@ ul.submenu:hover {
 
 @media only screen and (min-width: 481px) {
 
-    .mainmenu>li {
+    ul.mainmenu>li {
         float: left;
         position: relative;
         width: 20%;
@@ -218,7 +218,18 @@ ul.submenu:hover {
         display: table;
     }
 
-    nav.horizontal a.submenuTitle {
+    nav.horizontal .submenuTitle {
         display: none;
+    }
+
+    article {
+        float: left;
+        margin-right: 5%;
+        width: 55%;
+    }
+
+    aside {
+        float: left;
+        width: 40%;
     }
 }
